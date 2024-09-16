@@ -8,7 +8,7 @@ import { FaDownload } from "react-icons/fa6";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/Page/TextLayer.css";
 
-// Set the worker to the pdfjs-dist worker
+// Set the worker to the pdfjs-dist worker - use min.mjs in place min.js
 pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.mjs`;
 
 function ResumePage() {
