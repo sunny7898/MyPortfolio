@@ -1,0 +1,92 @@
+/* Footer styles */
+.footer {
+  height: 40vh; /* 40% of viewport height */
+  background-color: #f1f1f1; /* Light gray background */
+  border-top: 1px solid #ddd; /* Top border for separation */
+  padding: 0; /* Remove unnecessary padding */
+  margin: 0; /* Remove margin */
+  width: 100%; /* Ensure the footer spans full width */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Align content vertically, with space between upper and lower sections */
+  position: relative; /* Ensure that child elements are positioned relative to this */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  text-align: center; /* Center align text */
+}
+
+.footer-container {
+  margin-inline: 10rem;
+}
+
+.footer-upper {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid black;
+  padding: 2.8rem 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%; /* Make sure the content spans full width */
+}
+
+.footer-section {
+  margin-top: 1rem;
+  margin-bottom: 1rem; /* Margin for spacing between sections */
+  text-align: left; /* Left align text */
+}
+
+.footer-section.info {
+  max-width: 45%; /* Set width for the info section */
+}
+
+.footer-section.social {
+  max-width: 55%; /* Set width for the social section */
+}
+
+.footer-title {
+  display: block; /* Block display for better spacing */
+  font-weight: bold; /* Bold text */
+  font-size: x-large;
+  color: #1d4ed8; /* Blue color */
+  text-transform: uppercase;
+}
+
+.footer-description {
+  margin: 0; /* Remove default margin */
+  color: #666; /* Gray color for text */
+}
+
+.footer-lower {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center the content vertically */
+  color: #eee;
+  font-size: 1.2rem;
+  padding: 1.8rem 0;
+  font-size: small;
+}
+
+.footer-copyright {
+  color: #666; /* Gray color for text */
+  margin: 0; /* Ensure no extra margin */
+}
+
+.footer-link {
+  color: #1d4ed8; /* Blue color for the link */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Bold text */
+}
+
+/* Social media icons styles */
+.footer-social {
+  display: flex; /* Create a flex container for the icons */
+  align-items: center; /* Center items vertically */
+  gap: 1.25rem; /* Space between icons */
+}
+
+.footer-social > * {
+  font-size: 1.5rem; /* Increase the size of icons */
+}
