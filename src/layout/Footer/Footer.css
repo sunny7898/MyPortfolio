@@ -1,6 +1,6 @@
 /* Footer styles */
 .footer {
-  height: 40vh; /* 40% of viewport height */
+  height: 25%; /* 40% of viewport height */
   background-color: #f1f1f1; /* Light gray background */
   padding: 0; /* Remove unnecessary padding */
   margin: 0; /* Remove margin */
@@ -9,7 +9,7 @@
   flex-direction: column;
   justify-content: space-between; /* Align content vertically, with space between upper and lower sections */
   position: relative; /* Ensure that child elements are positioned relative to this */
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow: hidden; /* Prevent horizontal scrolling */
   text-align: center; /* Center align text */
 }
 
