@@ -1,0 +1,36 @@
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  height: 100vh; /* Full viewport height */
+  text-align: center;
+}
+
+.hero-summary {
+  margin-left: 15rem;
+  width: 45%;
+  text-align: left;
+}
+
+.hero-title {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.hero-image {
+  margin-right: 10rem;
+  padding: 1rem;
+}
+
+.hero-image > img {
+  height: 500px;
+  width: 500px;
+}

@@ -14,7 +14,6 @@ body {
 #root {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Full viewport height */
 }
 
 /* Main content area takes up available space, while Navbar stays unaffected */

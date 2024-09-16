@@ -1,8 +1,12 @@
 /* Add necessary padding to the Navbar to prevent shrinking */
 .navbar {
-  padding: 1rem 2rem; /* Adjust padding based on design needs */
-  background-color: #fff; /* Optional: Background color for navbar */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Navbar shadow */
+  background-color: #fff; /* Background color for visibility */
+  padding: 1rem; /* Adjust as needed */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it's on top of other content */
 }
 
 /* Navbar Container */

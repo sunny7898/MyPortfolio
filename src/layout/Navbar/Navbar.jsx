@@ -10,7 +10,7 @@ import "./Navbar.css"; // Import custom CSS for the underline animation
 
 function Navbar() {
   return (
-    <div className="navbar-container">
+    <div className="navbar navbar-container">
       <div className="navbar-content">
         <NavLink to="/" className="text-xl font-bold">
           <span className="text-xl font-bold">SG</span>

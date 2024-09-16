@@ -2,7 +2,6 @@
 .footer {
   height: 40vh; /* 40% of viewport height */
   background-color: #f1f1f1; /* Light gray background */
-  border-top: 1px solid #ddd; /* Top border for separation */
   padding: 0; /* Remove unnecessary padding */
   margin: 0; /* Remove margin */
   width: 100%; /* Ensure the footer spans full width */
