@@ -5,7 +5,7 @@ import Layout from "./layout/Layout";
 import Home from "./layout/Home";
 import About from "./components/About";
 import Projects from "./components/ProjectsComponent/Projects";
-import Resume from "./components/Resume";
+import ResumePage from "./components/Resume/ResumePage";
 import Skills from "./components/Skills";
 import ContactMe from "./components/ContactMe";
 
@@ -18,7 +18,7 @@ function App() {
         { index: true, element: <Home /> }, // Home component as default route
         { path: "about", element: <About /> },
         { path: "projects", element: <Projects /> },
-        { path: "resume", element: <Resume /> },
+        { path: "resume", element: <ResumePage /> },
         { path: "skills", element: <Skills /> },
         { path: "contact", element: <ContactMe /> },
       ],
