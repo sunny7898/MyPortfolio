@@ -1,0 +1,81 @@
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Add spacing between sections */
+  align-items: stretch; /* Ensure sections take full height */
+  margin-inline: 7rem;
+  text-align: center;
+  border-radius: 16px;
+  background-color: hsla(266, 99%, 99%, 0.986);
+  position: relative;
+  bottom: 12rem;
+  height: 75vh;
+}
+
+.skills-section {
+  flex: 1; /* Make each section take up equal space */
+  border: 1px solid #f1f1f1;
+  display: flex; /* Flex inside the section for alignment */
+  justify-content: center;
+  align-items: flex-start; /* Align SkillCard to the top */
+  padding-top: 2rem;
+}
+
+.col1 {
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+.col3 {
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.skill-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally inside SkillCard */
+  padding-top: 2rem;
+}
+
+.skill-icon {
+  display: flex; /* Use Flexbox to center the icon */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 80px; /* Increased height */
+  width: 80px; /* Increased width */
+  border-radius: 50%; /* Make it fully circular */
+  background-color: #5be9b9; /* Background color */
+  margin: 0 auto 1rem auto; /* Center the icon container and add margin below */
+  font-size: 2.25rem; /* Increase the size of the icon */
+  color: #000; /* Set icon color */
+}
+
+.skill-title {
+  font-family: "Eurostile";
+  margin-top: 1rem;
+  font-size: 24px;
+  font-weight: bolder;
+  word-break: break-word;
+}
+
+.skill-category {
+  margin: 2rem auto 1rem auto;
+  font-weight: 500;
+  font-size: 18px;
+  color: #6e07f3;
+}
+.skill-description {
+  font-family: inherit;
+  margin-top: 1.5rem;
+  font-size: 17px;
+  text-align: center;
+  padding-inline: 2rem;
+}
+
+.skill-technologies {
+  margin-top: 0.5rem;
+  line-height: 2rem;
+  font-weight: 500;
+}

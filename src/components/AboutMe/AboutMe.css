@@ -1,0 +1,26 @@
+/* About Me Section */
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 25rem;
+  padding-bottom: 6rem;
+  height: 80vh;
+  background-color: #6e07f3;
+  color: #fff;
+  margin-top: -150px;
+  /* Use this property later when you have user profile  Adjust the value to move it up */
+}
+
+.about-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.about-description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}

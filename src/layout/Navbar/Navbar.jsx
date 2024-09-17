@@ -24,18 +24,7 @@ function Navbar() {
                 <span>Home</span>
               </NavLink>
             </li>
-            <li>
-              <NavLink to="/about" className="nav-item">
-                <AiOutlineUser className="text-lg" />
-                <span>About</span>
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/skills" className="nav-item">
-                <AiOutlineTool className="text-lg" />
-                <span>Skills</span>
-              </NavLink>
-            </li>
+
             <li>
               <NavLink to="/projects" className="nav-item">
                 <AiOutlineFundProjectionScreen className="text-lg" />

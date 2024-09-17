@@ -1,4 +1,3 @@
-// src/components/ResumeViewer.js
 import React, { useState, useEffect } from "react";
 import { Document, Page } from "react-pdf";
 import { pdfjs } from "react-pdf";
@@ -22,6 +21,7 @@ function ResumePage() {
     <div className="resume-container">
       {/* Download button at the top */}
       <div className="download-cv">
+        {/* TODO: Create a blank container to host the pdf in it. this will help during loading */}
         <a
           href={resumePdf}
           target="_blank"

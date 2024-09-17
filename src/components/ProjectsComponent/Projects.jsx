@@ -9,6 +9,9 @@ function Projects() {
     <div className="project-container">
       <div className="heading-section">
         <h1 className="heading">My Projects</h1>
+        <p className="sub-heading">
+          These are some of the projects I've worked on. Check them out !
+        </p>
       </div>
       <div className="showcase-section">
         {projectsData.map((project, index) => (

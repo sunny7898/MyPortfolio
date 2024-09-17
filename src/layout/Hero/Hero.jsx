@@ -5,13 +5,10 @@ function Hero() {
   return (
     <div className="hero-container">
       <div className="hero-summary">
-        <h1 className="hero-title">Hey! I'm Sunny Goswami</h1>
+        <h1 className="hero-title">Full Stack Developer | DevOps Entusiast</h1>
         <p className="hero-description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam et illo
-          earum modi error maxime quas, delectus eius culpa Lorem ipsum dolor
-          sit amet consectetur adipisicing elit. Ex culpa reiciendis tempore,
-          facilis perspiciatis quo cum eos, molestias amet magni corrupti
-          recusandae iure harum illo nobis nihil repellat modi sapiente!
+          I Design & Build complex applications end to end & love exploring
+          DevOps Tools in my free time.
         </p>
       </div>
       <div className="hero-image">
