@@ -8,6 +8,7 @@
   width: 100%;
   z-index: 1000; /* Ensure it's on top of other content */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+  height: 10vh;
 }
 
 /* Navbar Container */

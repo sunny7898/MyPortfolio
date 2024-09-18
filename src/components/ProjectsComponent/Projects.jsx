@@ -1,4 +1,3 @@
-// src/components/Projects.js
 import React from "react";
 import projectsData from "../../assets/projectsData";
 import ProjectCard from "./ProjectCard"; // Import the new ProjectCard component
