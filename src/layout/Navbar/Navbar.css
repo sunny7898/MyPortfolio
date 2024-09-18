@@ -1,4 +1,4 @@
-/* Add necessary padding to the Navbar to prevent shrinking */
+/* Navbar Styles */
 .navbar {
   background-color: #fff; /* Background color for visibility */
   padding: 1rem; /* Adjust as needed */
@@ -26,6 +26,11 @@
   width: 100%;
   max-width: 1200px; /* Adjust based on design needs */
   padding: 0 2rem; /* Horizontal padding */
+}
+
+/* Navbar Brand */
+.navbar-content a {
+  text-decoration: none;
 }
 
 /* Navbar Links */

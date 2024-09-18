@@ -6,7 +6,7 @@ import Home from "./layout/Home";
 import About from "./components/AboutMe/AboutMe";
 import Projects from "./components/ProjectsComponent/Projects";
 import ResumePage from "./components/Resume/ResumePage";
-import ContactMe from "./components/ContactMe";
+import ContactMe from "./components/ContactMe/ContactMe";
 import Skills from "./components/Skills/Skills";
 
 function App() {

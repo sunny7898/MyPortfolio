@@ -1,15 +1,16 @@
 .skills-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; /* Add spacing between sections */
+  justify-content: space-between;
   align-items: stretch; /* Ensure sections take full height */
   margin-inline: 7rem;
   text-align: center;
   border-radius: 16px;
   background-color: hsla(266, 99%, 99%, 0.986);
   position: relative;
-  bottom: 12rem;
+  bottom: 15rem;
   height: 75vh;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .skills-section {

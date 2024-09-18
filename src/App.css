@@ -15,8 +15,3 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-/* Main content area takes up available space, while Navbar stays unaffected */
-.main-content {
-  flex: 1; /* Makes the main content fill available space */
-}
