@@ -36,11 +36,11 @@ function ContactMe() {
         EMAILJS_PUBLIC_KEY
       )
       .then(
-        (res) => {
+        () => {
           setLoading(false); // Stop loading
           setMessage("Success! Your message has been sent.");
         },
-        (error) => {
+        () => {
           setLoading(false); // Stop loading
           setMessage("Failed to send message. Please try again later.");
         }
@@ -53,7 +53,7 @@ function ContactMe() {
         <h1 className="contact-heading">Contact</h1>
         <h3 className="contact-heading-description">
           Feel free to Contact me by submitting the form below and I will get
-          back to you as soon as possible
+          back to you as soon as possible.
         </h3>
       </div>
       <div className="contact-form-section">
