@@ -2,36 +2,53 @@
 .hero-container {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  height: calc(100vh - 80px); /* Subtract the height of the navbar */
   text-align: center;
-  margin-top: 80px; /* Ensure the Hero section starts below the Navbar */
+  padding-top: 10%;
 }
 
-.hero-summary {
-  margin-left: 15rem;
-  width: 45%;
-  text-align: left;
+.hero-summary-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  padding: 1rem;
 }
 
 .hero-title {
+  font-family: "Eurostile";
+  font-weight: 800;
   font-size: 3rem;
   color: #333;
   margin-bottom: 1rem;
 }
 
+.hero-summary-section > h3 {
+  font-family: "Eurostile";
+  font-weight: lighter;
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
 .hero-description {
   font-size: 1.2rem;
   color: #666;
   margin-bottom: 2rem;
 }
 
+.hero-profile-pic > img {
+  height: 300px;
+}
+
 .hero-image {
-  margin-right: 10rem;
-  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  padding: 0rem;
 }
 
 .hero-image > img {
   height: 500px;
-  width: 500px;
+  width: 800px;
 }

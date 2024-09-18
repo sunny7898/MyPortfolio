@@ -6,9 +6,7 @@ function AboutMe() {
   return (
     <div className="about-container">
       <div className="about-section">
-        <h1 className="about-title">
-          Hi, I'm Sunny Goswami. Nice to Meet you.{" "}
-        </h1>
+        <h1 className="about-title">Thankyou for being here!</h1>
         <p className="about-description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam et illo
           earum modi error maxime quas, delectus eius culpa Lorem ipsum dolor

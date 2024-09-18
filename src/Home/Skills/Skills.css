@@ -2,42 +2,30 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: stretch; /* Ensure sections take full height */
+  align-items: center;
   margin-inline: 7rem;
   text-align: center;
   border-radius: 16px;
   background-color: hsla(266, 99%, 99%, 0.986);
   position: relative;
   bottom: 15rem;
-  height: 75vh;
+  height: 80vh;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .skills-section {
   flex: 1; /* Make each section take up equal space */
-  border: 1px solid #f1f1f1;
-  display: flex; /* Flex inside the section for alignment */
+  border-right: 2px solid #f1f1f1;
+  display: flex;
   justify-content: center;
-  align-items: flex-start; /* Align SkillCard to the top */
-  padding-top: 2rem;
-}
-
-.col1 {
-  border-top-left-radius: 16px;
-  border-bottom-left-radius: 16px;
-}
-
-.col3 {
-  border-top-right-radius: 16px;
-  border-bottom-right-radius: 16px;
+  align-items: flex-start;
 }
 
 .skill-card {
-  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center content horizontally inside SkillCard */
-  padding-top: 2rem;
+  align-items: center;
+  padding: 2rem 0 2rem 0;
 }
 
 .skill-icon {
