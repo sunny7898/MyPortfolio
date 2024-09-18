@@ -15,7 +15,9 @@ function Layout() {
   return (
     <div>
       <Navbar />
-      <Outlet />
+      <main>
+        <Outlet />
+      </main>
       <Footer />
     </div>
   );
