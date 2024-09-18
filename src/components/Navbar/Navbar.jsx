@@ -1,38 +1,53 @@
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
-import { FaRegFileAlt, FaBars, FaTimes } from "react-icons/fa";
-import "./Navbar.css";
+import { FaRegFileAlt } from "react-icons/fa";
+import { TiTimes } from "react-icons/ti"; // Import X icon
+import "./Navbar.css"; // Import custom CSS for the underline animation
 
 function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation(); // Get current location for route changes
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+  const handleToggle = () => {
+    setIsOpen(!isOpen);
   };
+
+  const handleCloseMenu = () => {
+    setIsOpen(false);
+  };
+
+  useEffect(() => {
+    // Close the menu when the route changes
+    handleCloseMenu();
+  }, [location]);
 
   return (
     <div className="navbar">
       <div className="navbar-logo-section">
-        <NavLink to="/" className="navbar-logo">
+        <NavLink to="/" className="navbar-logo" onClick={handleCloseMenu}>
           Sg.
         </NavLink>
       </div>
 
-      <div className="hamburger-menu-icon" onClick={toggleMenu}>
-        {isMenuOpen ? <FaTimes /> : <FaBars />}
-      </div>
-
-      <div className={`navbar-content-section ${isMenuOpen ? "open" : ""}`}>
+      <div className="navbar-content-section">
         <ul>
           <li>
-            <NavLink to="/projects" className="nav-item">
+            <NavLink
+              to="/projects"
+              className="nav-item"
+              onClick={handleCloseMenu}
+            >
               <AiOutlineFundProjectionScreen className="text-lg" />
               <span>Projects</span>
             </NavLink>
           </li>
           <li>
-            <NavLink to="/resume" className="nav-item">
+            <NavLink
+              to="/resume"
+              className="nav-item"
+              onClick={handleCloseMenu}
+            >
               <FaRegFileAlt className="text-lg" />
               <span>Resume</span>
             </NavLink>
@@ -40,23 +55,55 @@ function Navbar() {
         </ul>
 
         <NavLink to="/contact">
-          <button className="btn-outline">Contact Me</button>
+          <button className="btn-outline" onClick={handleCloseMenu}>
+            Contact Me
+          </button>
         </NavLink>
       </div>
 
-      {isMenuOpen && (
+      {/* Hamburger Icon */}
+      <div
+        className={`hamburger-menu-icon ${isOpen ? "open" : ""}`}
+        onClick={handleToggle}
+      >
+        {isOpen ? <TiTimes /> : <span>&#9776;</span>}{" "}
+        {/* Hamburger icon or X */}
+      </div>
+
+      {/* Hamburger Menu */}
+      {isOpen && (
         <div className="hamburger-menu">
-          <NavLink to="/projects" className="nav-item" onClick={toggleMenu}>
-            <AiOutlineFundProjectionScreen className="text-lg" />
-            <span>Projects</span>
-          </NavLink>
-          <NavLink to="/resume" className="nav-item" onClick={toggleMenu}>
-            <FaRegFileAlt className="text-lg" />
-            <span>Resume</span>
-          </NavLink>
-          <NavLink to="/contact" onClick={toggleMenu}>
-            <button className="btn-outline">Contact Me</button>
-          </NavLink>
+          <ul>
+            <li>
+              <NavLink
+                to="/projects"
+                className="hamburger-menu-item"
+                onClick={handleCloseMenu}
+              >
+                <AiOutlineFundProjectionScreen className="text-lg" />
+                <span>Projects</span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/resume"
+                className="hamburger-menu-item"
+                onClick={handleCloseMenu}
+              >
+                <FaRegFileAlt className="text-lg" />
+                <span>Resume</span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/contact"
+                className="hamburger-menu-item"
+                onClick={handleCloseMenu}
+              >
+                Contact Me
+              </NavLink>
+            </li>
+          </ul>
         </div>
       )}
     </div>
