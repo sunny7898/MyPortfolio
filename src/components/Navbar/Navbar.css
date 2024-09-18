@@ -1,37 +1,44 @@
 /* Navbar Styles */
 .navbar {
-  background-color: #fff; /* Background color for visibility */
-  padding: 1rem; /* Adjust as needed */
-  position: fixed;
-  top: 0;
-  left: 0;
+  background-color: white;
   width: 100%;
-  z-index: 1000; /* Ensure it's on top of other content */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
   height: 10vh;
+  padding: 2rem 5rem; /* Add horizontal padding for margin */
+
+  position: fixed;
+  z-index: 1000; /* Ensure it's on top of other content */
+
+  display: flex;
+  justify-content: space-between; /* Align logo and content on opposite sides */
+  align-items: center; /* Center vertically */
 }
 
-/* Navbar Container */
-.navbar-container {
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  background-color: #f1f1f1; /* Optional background color */
-  padding: 1rem 0; /* Vertical padding */
-}
+/* Logo aligned to the left */
+.navbar-logo-section {
+  flex-shrink: 0;
+  height: 3rem;
+  width: 3rem;
 
-/* Navbar Content */
-.navbar-content {
   display: flex;
-  justify-content: space-between; /* Space between elements */
   align-items: center;
-  width: 100%;
-  max-width: 1200px; /* Adjust based on design needs */
-  padding: 0 2rem; /* Horizontal padding */
+  justify-content: center;
 }
 
-/* Navbar Brand */
-.navbar-content a {
-  text-decoration: none;
+.navbar-logo {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #6e07f3;
+}
+
+/* Content aligned to the right */
+.navbar-content-section {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-content-section > ul {
+  display: flex;
+  margin-right: 2rem;
 }
 
 /* Navbar Links */
@@ -43,6 +50,7 @@
   text-decoration: none;
   color: #4a4a4a; /* Default gray color */
   font-weight: 500;
+  margin-left: 2rem; /* Add space between each nav item */
 }
 
 .nav-item:hover {
@@ -71,10 +79,10 @@
   color: #4a4a4a;
   font-weight: 500; /* Match font weight */
   padding: 0.25rem 0.75rem; /* Adjust padding to match text height */
-  border-radius: 0.25rem; /* Slightly rounded corners */
+  border-radius: 2.75rem; /* Slightly rounded corners */
   text-transform: uppercase; /* Uppercase text (optional) */
   font-size: 0.875rem; /* Smaller font size */
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition for hover effects */
+  transition: background-color 0.2s ease-in-out, color 0.3s ease-in-out; /* Smooth transition for hover effects */
 }
 
 .btn-outline:hover {

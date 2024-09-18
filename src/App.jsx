@@ -2,13 +2,14 @@ import "./App.css";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import Home from "./Home/Home";
-import About from "./components/AboutMe/AboutMe";
+import AboutMe from "./Home/AboutMe/AboutMe";
+import Skills from "./Home/Skills/Skills";
+
 import Projects from "./components/ProjectsComponent/Projects";
 import ResumePage from "./components/Resume/ResumePage";
 import ContactMe from "./components/ContactMe/ContactMe";
-import Skills from "./components/Skills/Skills";
-import Navbar from "./Home/Navbar/Navbar";
-import Footer from "./Home/Footer/Footer";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 
 function Layout() {
   return (
@@ -24,10 +25,10 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Layout />, // Use Layout here
+      element: <Layout />,
       children: [
-        { index: true, element: <Home /> }, // Home component as default route
-        { path: "about", element: <About /> },
+        { index: true, element: <Home /> },
+        { path: "about", element: <AboutMe /> },
         { path: "projects", element: <Projects /> },
         { path: "resume", element: <ResumePage /> },
         { path: "skills", element: <Skills /> },

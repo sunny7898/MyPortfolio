@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "./Hero/Hero";
-import AboutMe from "../components/AboutMe/AboutMe";
+import AboutMe from "./AboutMe/AboutMe";
 
 function Home() {
   return (
