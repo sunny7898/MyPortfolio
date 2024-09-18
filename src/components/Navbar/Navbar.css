@@ -1,9 +1,9 @@
 /* Navbar Styles */
 .navbar {
-  background-color: white;
+  background-color: #fff;
   width: 100%;
   height: 10vh;
-  padding: 3rem 4rem; /* Adjust padding to fit within viewport */
+  padding: 2% 4%; /* Adjust padding to fit within viewport */
   position: fixed;
   z-index: 1000; /* Ensure it's on top of other content */
   display: flex;
@@ -14,8 +14,8 @@
 /* Logo aligned to the left */
 .navbar-logo-section {
   flex-shrink: 0;
-  height: 3rem;
-  width: 3rem;
+  height: 3vh;
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,7 +24,7 @@
 /* Logo text */
 .navbar-logo {
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.5vh;
   color: #6e07f3;
 }
 
@@ -130,8 +130,8 @@
 /* Media queries for responsive adjustments */
 @media (max-width: 768px) {
   .navbar {
-    padding: 1.5rem; /* Less padding on smaller screens */
-    height: 7vh;
+    padding: 2% 4%; /* Less padding on smaller screens */
+    height: 8vh; /* Adjust height proportionally */
   }
 
   .navbar-content-section {
@@ -144,11 +144,5 @@
 
   .hamburger-menu-icon {
     display: block; /* Show hamburger icon on mobile */
-  }
-}
-
-@media (max-width: 768px) {
-  .navbar-logo-section {
-    margin-right: auto; /* Keep logo aligned to the left */
   }
 }
