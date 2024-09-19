@@ -2,8 +2,7 @@ import { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { FaRegFileAlt } from "react-icons/fa";
-import { TiTimes } from "react-icons/ti"; // Import X icon
-import "./Navbar.css"; // Import custom CSS for the underline animation
+import "./Navbar.css";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
