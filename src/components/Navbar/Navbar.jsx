@@ -31,14 +31,14 @@ function Navbar() {
       </div>
 
       <div className="navbar-content-section">
-        <ul>
+        <ul className="navbar-item-list">
           <li>
             <NavLink
               to="/projects"
               className="nav-item"
               onClick={handleCloseMenu}
             >
-              <AiOutlineFundProjectionScreen className="text-lg" />
+              <AiOutlineFundProjectionScreen />
               <span>Projects</span>
             </NavLink>
           </li>
@@ -48,7 +48,7 @@ function Navbar() {
               className="nav-item"
               onClick={handleCloseMenu}
             >
-              <FaRegFileAlt className="text-lg" />
+              <FaRegFileAlt />
               <span>Resume</span>
             </NavLink>
           </li>
@@ -66,8 +66,7 @@ function Navbar() {
         className={`hamburger-menu-icon ${isOpen ? "open" : ""}`}
         onClick={handleToggle}
       >
-        {isOpen ? <TiTimes /> : <span>&#9776;</span>}{" "}
-        {/* Hamburger icon or X */}
+        {isOpen ? "x" : <span>&#9776;</span>} {/* Hamburger icon or X */}
       </div>
 
       {/* Hamburger Menu */}

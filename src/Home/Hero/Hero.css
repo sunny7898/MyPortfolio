@@ -5,7 +5,9 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-top: 10%;
+  padding-top: 10vh;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .hero-summary-section {
@@ -13,42 +15,83 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 60%;
+  width: 100%; /* Full width for smaller screens */
   padding: 1rem;
+}
+
+@media (min-width: 769px) {
+  .hero-summary-section {
+    width: 50%; /* Adjust width on larger screens */
+    padding-right: 2rem; /* Space between text and image */
+  }
 }
 
 .hero-title {
   font-family: "Eurostile";
   font-weight: 800;
-  font-size: 3rem;
+  font-size: 2rem;
   color: #333;
   margin-bottom: 1rem;
+}
+
+@media (min-width: 769px) {
+  .hero-title {
+    font-size: 3rem; /* Larger font size on bigger screens */
+  }
 }
 
 .hero-summary-section > h3 {
   font-family: "Eurostile";
   font-weight: lighter;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #333;
   margin-bottom: 1rem;
 }
+
+@media (min-width: 769px) {
+  .hero-summary-section > h3 {
+    font-size: 1.5rem;
+  }
+}
+
 .hero-description {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #666;
   margin-bottom: 2rem;
 }
 
+@media (min-width: 769px) {
+  .hero-description {
+    font-size: 1.2rem;
+  }
+}
+
 .hero-profile-pic > img {
-  height: 300px;
+  height: 200px; /* Smaller on mobile */
+}
+
+@media (min-width: 769px) {
+  .hero-profile-pic > img {
+    height: 300px; /* Larger on bigger screens */
+  }
 }
 
 .hero-image {
   display: flex;
   justify-content: center;
-  padding: 0rem;
+  padding: 0;
+  margin-top: 2rem; /* Adjust spacing */
 }
 
 .hero-image > img {
-  height: 500px;
-  width: 800px;
+  width: 100%; /* Responsive image */
+  height: auto;
+  max-width: 800px; /* Limit max size */
+  max-height: 500px;
+}
+
+@media (min-width: 769px) {
+  .hero-image {
+    margin-top: 0; /* Remove extra margin on larger screens */
+  }
 }

@@ -1,59 +1,49 @@
-/* Navbar Styles */
+/* Common Navbar Styles */
 .navbar {
-  background-color: #fff;
-  width: 100%;
   height: 10vh;
-  padding: 2% 4%; /* Adjust padding to fit within viewport */
   position: fixed;
-  z-index: 1000; /* Ensure it's on top of other content */
+  z-index: 1000;
+  width: 100vw;
+  padding: 1% 5%;
+  box-sizing: border-box;
   display: flex;
-  justify-content: space-between; /* Align logo and content on opposite sides */
-  align-items: center; /* Center vertically */
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* Logo aligned to the left */
-.navbar-logo-section {
-  flex-shrink: 0;
-  height: 3vh;
-  width: auto;
+.navbar-logo {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-/* Logo text */
-.navbar-logo {
   font-weight: 700;
-  font-size: 2.5vh;
   color: #6e07f3;
 }
 
-/* Content aligned to the right */
 .navbar-content-section {
   display: flex;
   align-items: center;
+  width: 60%;
+  height: 100%;
+  justify-content: flex-end;
 }
 
-.navbar-content-section > ul {
+.navbar-item-list {
   display: flex;
-  align-items: center;
   margin-right: 1rem;
 }
 
-/* Navbar Links */
 .nav-item {
   display: flex;
-  position: relative;
   align-items: center;
   gap: 0.5rem;
-  text-decoration: none;
-  color: #4a4a4a; /* Default gray color */
+  color: #000;
   font-weight: 500;
-  margin-left: 1rem; /* Adjust space between each nav item */
+  padding-inline: 0.5rem;
+  position: relative;
 }
 
 .nav-item:hover {
-  color: #6e07f3; /* Blue color on hover */
+  color: #6e07f3;
 }
 
 .nav-item::after {
@@ -63,7 +53,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #6e07f3; /* Blue color */
+  background-color: #6e07f3;
   transition: width 0.3s ease-in-out;
 }
 
@@ -71,78 +61,197 @@
   width: 100%;
 }
 
-/* New button styles */
 .btn-outline {
   background-color: transparent;
-  border: 2px solid #4a4a4a;
-  color: #4a4a4a;
-  font-weight: 500; /* Match font weight */
-  padding: 0.25rem 0.75rem; /* Adjust padding to match text height */
-  border-radius: 2.75rem; /* Slightly rounded corners */
-  text-transform: uppercase; /* Uppercase text (optional) */
-  font-size: 0.875rem; /* Smaller font size */
-  transition: background-color 0.2s ease-in-out, color 0.3s ease-in-out; /* Smooth transition for hover effects */
+  border: 3px solid #000;
+  color: #000;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 2.75rem;
+  text-transform: uppercase;
+  font-size: 1rem; /* Increased font size */
+  transition: background-color 0.2s ease-in-out, color 0.3s ease-in-out;
 }
 
 .btn-outline:hover {
-  background-color: #6e07f3; /* Blue background on hover */
-  color: white; /* White text color on hover */
+  background-color: #6e07f3;
+  color: white;
 }
 
-/* Hamburger Menu Styles */
 .hamburger-menu {
-  display: none; /* Hide by default */
+  display: none;
   flex-direction: column;
   position: absolute;
-  top: 100%; /* Position directly below the navbar */
-  right: 0; /* Align to the right */
-  background-color: #fff; /* Background color of the menu */
-  border-bottom: 1px solid #ddd; /* Optional border for menu */
-  width: 100vw; /* Full width of viewport */
-  max-width: 100%; /* Ensure it doesn't exceed viewport width */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for better visibility */
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  width: 100vw;
+  max-width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.hamburger-menu-icon {
-  display: none; /* Hide by default */
-  cursor: pointer;
-  font-size: 2rem; /* Make X icon larger */
-}
-
-/* Hamburger Menu Item Styles */
 .hamburger-menu-item {
-  height: 7vh;
-  padding-inline: 1rem; /* Padding around each menu item */
-  color: #4a4a4a; /* Default text color */
+  padding: 1rem;
+  color: #000;
   font-weight: 500;
-  font-size: 1rem; /* Adjust font size */
   display: flex;
-  align-items: center;
   gap: 0.5rem;
+  align-items: center;
   justify-content: flex-end;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .hamburger-menu-item:hover {
-  color: #6e07f3; /* Blue color on hover */
+  color: #6e07f3;
 }
 
-/* Media queries for responsive adjustments */
-@media (max-width: 768px) {
-  .navbar {
-    padding: 2% 4%; /* Less padding on smaller screens */
-    height: 8vh; /* Adjust height proportionally */
+.hamburger-menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+/* Media Queries */
+
+/* For large desktop screens (1440px and above) */
+@media (min-width: 1440px) {
+  .navbar-logo {
+    font-size: 4.5vh;
+  }
+
+  .nav-item {
+    font-size: 1.125rem;
+  }
+
+  .btn-outline {
+    font-size: 0.85rem;
+    padding: 0.75rem 1.25rem;
+  }
+}
+
+/* For regular desktop screens (1024px and above) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .navbar-logo {
+    font-size: 4vh;
+  }
+
+  .nav-item {
+    font-size: 1.125rem;
+  }
+
+  .btn-outline {
+    font-size: 0.85rem;
+    padding: 0.75rem 1.25rem;
+  }
+}
+
+/* Tablet landscape mode (width between 769px and 1023px) */
+@media (min-width: 769px) and (max-width: 1023px) {
+  .navbar-logo {
+    font-size: 4vh;
+  }
+
+  .nav-item {
+    font-size: 1.125rem;
+  }
+
+  .btn-outline {
+    font-size: 0.85rem;
+    padding: 0.75rem 1.25rem;
+  }
+}
+
+/* Tablet portrait mode (width between 481px and 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .navbar-logo {
+    font-size: 3.5vh;
   }
 
   .navbar-content-section {
-    display: none; /* Hide the content section on mobile */
-  }
-
-  .hamburger-menu {
-    display: flex; /* Show hamburger menu on mobile */
+    display: none;
   }
 
   .hamburger-menu-icon {
-    display: block; /* Show hamburger icon on mobile */
+    display: block;
+    font-size: 2rem;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .hamburger-menu-item {
+    font-size: 1.125rem;
+  }
+}
+
+/* Mobile devices (width between 321px and 480px) */
+@media (min-width: 321px) and (max-width: 480px) {
+  .navbar-logo {
+    font-size: 3.5vh;
+  }
+
+  .navbar-content-section {
+    display: none;
+  }
+
+  .hamburger-menu-icon {
+    display: block;
+    font-size: 1.75rem;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .hamburger-menu-item {
+    font-size: 1rem;
+  }
+}
+
+/* Small mobile devices (width up to 320px) */
+@media (max-width: 320px) {
+  .navbar-logo {
+    font-size: 3.5vh;
+  }
+
+  .navbar-content-section {
+    display: none;
+  }
+
+  .hamburger-menu-icon {
+    display: block;
+    font-size: 1.75rem;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .hamburger-menu-item {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile landscape mode (width up to 768px but height less than width) */
+@media (max-width: 768px) and (orientation: landscape) {
+  .navbar-logo {
+    font-size: 6vh;
+  }
+
+  .navbar-content-section {
+    display: none;
+  }
+
+  .hamburger-menu-icon {
+    display: block;
+    font-size: 1.5rem;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .hamburger-menu-item {
+    font-size: 0.85rem;
   }
 }

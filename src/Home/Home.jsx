@@ -4,10 +4,10 @@ import AboutMe from "./AboutMe/AboutMe";
 
 function Home() {
   return (
-    <div>
+    <>
       <Hero />
       <AboutMe />
-    </div>
+    </>
   );
 }
 
