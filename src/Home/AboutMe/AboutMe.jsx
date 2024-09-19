@@ -6,6 +6,10 @@ function AboutMe() {
   return (
     <div className="about-container">
       <div className="about-section">
+        <div className="hero-image">
+          <img src="../../../public/images/hero-devices.svg" alt="image" />
+        </div>
+
         <h1 className="about-title">Thankyou for being here!</h1>
         <p className="about-description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam et illo

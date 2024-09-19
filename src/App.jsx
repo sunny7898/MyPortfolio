@@ -15,10 +15,10 @@ function Layout() {
   return (
     <div>
       <Navbar />
-      {/* <main>
+      <main>
         <Outlet />
       </main>
-      <Footer /> */}
+      {/* <Footer /> */}
     </div>
   );
 }

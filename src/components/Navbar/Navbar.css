@@ -1,6 +1,7 @@
 /* Common Navbar Styles */
 .navbar {
-  height: 10vh;
+  background-color: #fff;
+  height: 12vh;
   position: fixed;
   z-index: 1000;
   width: 100vw;
