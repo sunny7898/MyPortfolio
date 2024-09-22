@@ -20,7 +20,7 @@ function Footer() {
             </div>
             <div className="footer-section social">
               <span className="footer-title">SOCIAL</span>
-              <div className="footer-social mt-2">
+              <div className="footer-social">
                 <FaLinkedinIn />
                 <FaGithub />
                 <FaTwitter />
