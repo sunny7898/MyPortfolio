@@ -1,58 +1,53 @@
 /* Project Card Container */
 .project-card {
-  width: 300px; /* Reduced width for a more compact card */
-  padding: 15px; /* Adjusted padding */
+  width: 300px;
+  padding: 15px;
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   background-color: #fff;
   display: flex;
-  flex-direction: column; /* Ensure content stacks properly */
-  justify-content: space-between; /* Reduce white space by balancing content */
-  height: 100%; /* Ensure cards are consistent in height */
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
-/* Project Image */
 .project-image {
   width: 100%;
-  height: 200px; /* Reduced height for a more balanced layout */
-  object-fit: cover; /* Ensure the image covers the area without distortion */
+  height: 200px;
+  object-fit: cover;
   border-radius: 8px;
-  margin-bottom: 15px; /* Add some space below the image */
+  margin-bottom: 15px;
 }
 
-/* Project Title */
 .project-title {
-  font-size: 20px; /* Slightly smaller font */
+  font-size: 20px;
   color: #333;
-  margin-bottom: 10px; /* Adjusted margin */
+  margin-bottom: 10px;
 }
 
-/* Project Summary */
 .project-summary {
   font-size: 14px;
   color: #777;
-  line-height: 1.5; /* Better readability */
-  display: -webkit-box; /* Necessary for multiline ellipsis */
-  -webkit-line-clamp: 2; /* Limits the text to 3 lines */
-  -webkit-box-orient: vertical; /* Specifies vertical text orientation */
-  overflow: hidden; /* Hides overflowing text */
-  text-overflow: ellipsis; /* Adds ellipsis to the truncated text */
-  max-height: 3rem; /* Set based on the line-height and number of lines */
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 3rem;
   margin-bottom: 1rem;
 }
 
-/* Project Links Section */
 .project-links {
   display: flex;
-  justify-content: center; /* Center the links */
-  gap: 10px; /* Add spacing between the links */
+  justify-content: center;
+  gap: 10px;
 }
 
-/* Individual Link Styling */
 .project-link {
-  padding: 8px 12px; /* Reduced padding for a sleeker look */
+  padding: 8px 12px;
   background-color: #007bff;
   color: white;
   text-decoration: none;
@@ -63,4 +58,151 @@
 
 .project-link:hover {
   background-color: #0056b3;
+}
+
+/* Media Queries */
+
+/* For large desktop screens (1440px and above) */
+@media (min-width: 1440px) {
+  .navbar-logo {
+    font-size: 4.5vh;
+  }
+
+  .nav-item {
+    font-size: 2.15vh;
+  }
+
+  .btn-outline {
+    font-size: 1.75vh;
+    padding: 1.25vh 1.5vw;
+  }
+}
+
+/* For regular desktop screens (1024px and above) */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .navbar-logo {
+    font-size: 5vh;
+  }
+
+  .nav-item {
+    font-size: 2.5vh;
+  }
+
+  .btn-outline {
+    font-size: 2vh;
+    padding: 1.25vh 1.5vw;
+  }
+}
+
+/* Tablet landscape mode (width between 769px and 1023px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar-logo {
+    font-size: 4.5vh;
+  }
+
+  .nav-item {
+    font-size: 2.5vh;
+    padding-inline: 1vw;
+  }
+
+  .btn-outline {
+    font-size: 2vh;
+    padding: 1.25vh 1.5vw;
+  }
+}
+
+/* Tablet portrait mode (width between 481px and 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .navbar-logo {
+    font-size: 4.5vh;
+  }
+
+  .navbar-content-section {
+    display: none;
+  }
+
+  .hamburger-menu-icon {
+    display: block;
+    font-size: 5vh;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .hamburger-menu-item {
+    font-size: 2.5vh;
+  }
+}
+
+/* Mobile devices (width between 321px and 480px) */
+@media (min-width: 321px) and (max-width: 480px) {
+  .navbar-logo {
+    font-size: 4vh;
+  }
+
+  .navbar-content-section {
+    display: none;
+  }
+
+  .hamburger-menu-icon {
+    display: block;
+    font-size: 4.5vh;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .hamburger-menu-item {
+    font-size: 2.5vh;
+  }
+}
+
+/* Small mobile devices (width up to 320px) */
+@media (max-width: 320px) {
+  .navbar-logo {
+    font-size: 4vh;
+  }
+
+  .navbar-content-section {
+    display: none;
+  }
+
+  .hamburger-menu-icon {
+    display: block;
+    font-size: 4vh;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .hamburger-menu-item {
+    font-size: 2.5vh;
+  }
+}
+
+/* Mobile landscape mode (width up to 768px but height less than width) */
+@media (max-width: 768px) and (orientation: landscape) {
+  .navbar-logo {
+    font-size: 4.5vh;
+  }
+
+  .navbar-content-section {
+    display: none;
+  }
+
+  .hamburger-menu-icon {
+    display: block;
+    font-size: 5vh;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .hamburger-menu-item {
+    font-size: 2.5vh;
+  }
 }
