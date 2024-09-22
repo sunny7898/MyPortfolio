@@ -13,13 +13,13 @@ import Footer from "./components/Footer/Footer";
 
 function Layout() {
   return (
-    <div>
+    <>
       <Navbar />
       <main>
         <Outlet />
       </main>
       <Footer />
-    </div>
+    </>
   );
 }
 

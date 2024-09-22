@@ -1,15 +1,10 @@
 /* Footer styles */
-.footer {
+.footer-container {
   background-color: #f1f1f1;
-  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   position: relative;
-  padding: 0;
   margin: 0;
-  overflow: hidden;
-  text-align: center;
 }
 
 .footer-upper {
@@ -23,10 +18,8 @@
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  height: 1px;
-  background-color: black;
+  background-color: #38353577;
   width: 100%;
-  margin-top: 1rem;
 }
 
 .footer-content {
@@ -77,16 +70,15 @@
 /* For large desktop screens (1440px and above) */
 @media (min-width: 1440px) {
   .footer-container {
-    margin-inline: 8vw;
+    padding-inline: 5vw;
   }
 
   .footer-upper {
-    padding: 5vh 0;
+    padding: 7vh 0 5vh 0;
   }
 
-  .footer-section {
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+  .footer-upper::after {
+    height: 0.1vh;
   }
 
   .footer-section.info {
@@ -102,8 +94,8 @@
   }
 
   .footer-description {
-    margin-top: 1.25vh;
-    font-size: 1.5vh;
+    margin-top: 1vh;
+    font-size: 1.75vh;
   }
 
   .footer-social {
@@ -114,23 +106,22 @@
 
   .footer-lower {
     padding: 2.5vh 0;
-    font-size: 1.5vh;
+    font-size: 1.75vh;
   }
 }
 
 /* For regular desktop screens (1024px and above) */
 @media (min-width: 1024px) and (max-width: 1440px) {
   .footer-container {
-    margin-inline: 8vw;
+    padding-inline: 5vw;
   }
 
   .footer-upper {
-    padding: 5vh 0;
+    padding: 7vh 0 5vh 0;
   }
 
-  .footer-section {
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+  .footer-upper::after {
+    height: 0.1vh;
   }
 
   .footer-section.info {
@@ -146,8 +137,8 @@
   }
 
   .footer-description {
-    margin-top: 1.25vh;
-    font-size: 1.5vh;
+    margin-top: 1vh;
+    font-size: 1.75vh;
   }
 
   .footer-social {
@@ -165,16 +156,15 @@
 /* Tablet landscape mode (width between 769px and 1023px) */
 @media (min-width: 769px) and (max-width: 1024px) {
   .footer-container {
-    margin-inline: 8vw;
+    padding-inline: 5vw;
   }
 
   .footer-upper {
-    padding: 5vh 0;
+    padding: 7vh 0;
   }
 
-  .footer-section {
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+  .footer-upper::after {
+    height: 0.1vh;
   }
 
   .footer-section.info {
@@ -190,8 +180,8 @@
   }
 
   .footer-description {
-    margin-top: 1.25vh;
-    font-size: 1.5vh;
+    margin-top: 1vh;
+    font-size: 1.75vh;
   }
 
   .footer-social {
@@ -209,16 +199,15 @@
 /* Tablet portrait mode (width between 481px and 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
   .footer-container {
-    margin-inline: 8vw;
+    padding-inline: 5vw;
   }
 
   .footer-upper {
-    padding: 5vh 0;
+    padding: 7vh 0;
   }
 
-  .footer-section {
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+  .footer-upper::after {
+    height: 0.1vh;
   }
 
   .footer-section.info {
@@ -234,8 +223,8 @@
   }
 
   .footer-description {
-    margin-top: 1.25vh;
-    font-size: 1.5vh;
+    margin-top: 1vh;
+    font-size: 1.75vh;
   }
 
   .footer-social {
@@ -252,16 +241,16 @@
 
 /* Mobile devices (width between 321px and 480px) */
 @media (min-width: 321px) and (max-width: 480px) {
-  .footer-container {
-    margin-inline: 1vw;
-  }
-
   .footer-upper {
-    padding: 2vh 0;
+    padding: 4vh 0;
+  }
+  .footer-upper::after {
+    height: 0.1vh;
+    width: 80%;
   }
 
   .footer-content {
-    padding-left: 10vw;
+    padding-inline: 10vw;
     flex-direction: column;
     text-align: center;
   }
@@ -274,10 +263,13 @@
 
   .footer-section.social {
     order: 1;
+    max-width: 80%;
   }
 
   .footer-section.info {
     order: 2;
+    max-width: 80%;
+    padding-top: 1vh;
   }
 
   .footer-title {
@@ -296,45 +288,25 @@
   }
 
   .footer-lower {
-    padding: 2.5vh 0;
-    font-size: 1.75vh;
-  }
-
-  .footer-upper::after {
-    width: 80%;
-  }
-
-  .footer-content {
-    width: 100%;
-  }
-
-  .footer-section.info {
-    max-width: 80%;
-  }
-
-  .footer-section.social {
-    max-width: 80%;
-  }
-  .footer-lower {
-    padding: 2.5vh 0;
+    padding: 2.5vh 2vw;
     font-size: 1.25vh;
   }
 }
 
 /* Small mobile devices (width up to 320px) */
 @media (max-width: 320px) {
-  .footer-container {
-    width: 100%;
-    margin-inline: 1vw;
-  }
-
   .footer-upper {
-    padding: 2vh 0;
+    padding: 4vh 0;
+  }
+  .footer-upper::after {
+    height: 0.1vh;
+    width: 80%;
   }
 
   .footer-content {
-    padding-left: 10vw;
+    padding-inline: 10vw;
     flex-direction: column;
+    text-align: center;
   }
 
   .footer-section {
@@ -345,10 +317,13 @@
 
   .footer-section.social {
     order: 1;
+    max-width: 80%;
   }
 
   .footer-section.info {
+    padding-top: 1vh;
     order: 2;
+    max-width: 80%;
   }
 
   .footer-title {
@@ -367,27 +342,7 @@
   }
 
   .footer-lower {
-    padding: 2.5vh 0;
-    font-size: 1.75vh;
-  }
-
-  .footer-upper::after {
-    width: 80%;
-  }
-
-  .footer-content {
-    width: 100%;
-  }
-
-  .footer-section.info {
-    max-width: 80%;
-  }
-
-  .footer-section.social {
-    max-width: 80%;
-  }
-  .footer-lower {
-    width: 100%;
+    padding: 2.5vh 2vw;
     font-size: 1.25vh;
   }
 }
@@ -395,43 +350,36 @@
 /* Mobile landscape mode (width up to 768px but height less than width) */
 @media (max-width: 768px) and (orientation: landscape) {
   .footer-container {
-    margin-inline: 1vw;
+    padding-inline: 5vw;
   }
 
   .footer-upper {
-    padding: 2vh 0;
+    padding: 5vh 0;
   }
 
-  .footer-content {
-    padding-left: 10vw;
-    flex-direction: column;
-  }
-
-  .footer-section {
-    width: 100%;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-  }
-
-  .footer-section.social {
-    order: 1;
+  .footer-upper::after {
+    height: 0.1vh;
   }
 
   .footer-section.info {
-    order: 2;
+    max-width: 45%;
+  }
+
+  .footer-section.social {
+    max-width: 55%;
   }
 
   .footer-title {
-    font-size: 2.25vh;
+    font-size: 2.5vh;
   }
 
   .footer-description {
-    margin-top: 1.25vh;
-    font-size: 1.5vh;
+    margin-top: 1vh;
+    font-size: 1.75vh;
   }
 
   .footer-social {
-    gap: 2.5vw;
+    gap: 1.25vw;
     margin-top: 1.25vh;
     font-size: 2.25vh;
   }
@@ -439,25 +387,5 @@
   .footer-lower {
     padding: 2.5vh 0;
     font-size: 1.75vh;
-  }
-
-  .footer-upper::after {
-    width: 80%;
-  }
-
-  .footer-content {
-    width: 100%;
-  }
-
-  .footer-section.info {
-    max-width: 80%;
-  }
-
-  .footer-section.social {
-    max-width: 80%;
-  }
-  .footer-lower {
-    padding: 2.5vh 0;
-    font-size: 1.25vh;
   }
 }
