@@ -1,26 +1,214 @@
 /* About Me Section */
-.about-section {
+.about-container {
   display: flex;
   flex-direction: column;
+}
+
+.about-device-logo {
+  align-self: center;
+  height: 50vh;
+}
+
+.about-section {
+  display: flex;
   justify-content: center;
-  padding-inline: 25rem;
-  padding-bottom: 12rem;
-  height: 80vh;
   background-color: #6e07f3;
   color: #fff;
-  margin-top: -80px;
-  /* Use this property later when you have user profile  Adjust the value to move it up */
+}
+
+.about-section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about-title {
   text-align: center;
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 1rem;
 }
 
 .about-description {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
   text-align: center;
+  word-wrap: break-word; /* Ensure long words are wrapped */
+}
+
+/* For large desktop screens (1440px and above) */
+@media (min-width: 1440px) {
+  .about-device-logo {
+    height: 100%;
+    width: 70%;
+  }
+
+  .about-section {
+    padding: 0vh 0 30vh 0;
+  }
+
+  .about-section-content {
+    padding: 13vh 20vw 15vh 20vw;
+  }
+
+  .about-title {
+    font-size: 5vh;
+    margin-bottom: 3vh;
+  }
+
+  .about-description {
+    padding-inline: 1vw;
+    font-size: 2.5vh;
+  }
+}
+
+/* For regular desktop screens (1024px and above) */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .about-device-logo {
+    height: 100%;
+    width: 70%;
+  }
+
+  .about-section {
+    padding: 0vh 0 30vh 0;
+  }
+
+  .about-section-content {
+    padding: 13vh 20vw 15vh 20vw;
+  }
+
+  .about-title {
+    font-size: 5vh;
+    margin-bottom: 3vh;
+  }
+
+  .about-description {
+    padding-inline: 1vw;
+    font-size: 2.5vh;
+  }
+}
+
+/* Tablet landscape mode (width between 769px and 1023px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .about-device-logo {
+    height: 100%;
+    width: 70%;
+  }
+
+  .about-section {
+    padding: 0vh 0 30vh 0;
+  }
+
+  .about-section-content {
+    padding: 13vh 20vw 15vh 20vw;
+  }
+
+  .about-title {
+    font-size: 5vh;
+    margin-bottom: 3vh;
+  }
+
+  .about-description {
+    padding-inline: 1vw;
+    font-size: 2.75vh;
+  }
+}
+
+/* Tablet portrait mode (width between 481px and 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .about-device-logo {
+    height: 100%;
+    width: 70%;
+  }
+
+  .about-section {
+    padding: 0vh 0 30vh 0;
+  }
+
+  .about-section-content {
+    padding: 13vh 20vw 15vh 20vw;
+  }
+
+  .about-title {
+    font-size: 5vh;
+    margin-bottom: 3vh;
+  }
+
+  .about-description {
+    padding-inline: 1vw;
+    font-size: 2.5vh;
+  }
+}
+
+/* Mobile devices (width between 321px and 480px) */
+@media (min-width: 321px) and (max-width: 480px) {
+  .about-device-logo {
+    height: 100%;
+    width: 70%;
+  }
+
+  .about-section {
+    padding: 0vh 0 30vh 0;
+  }
+
+  .about-section-content {
+    padding: 13vh 20vw 15vh 20vw;
+  }
+
+  .about-title {
+    font-size: 3.5vh;
+    margin-bottom: 3vh;
+  }
+
+  .about-description {
+    padding-inline: 1vw;
+    font-size: 2.25vh;
+  }
+}
+
+/* Small mobile devices (width up to 320px) */
+@media (max-width: 320px) {
+  .about-device-logo {
+    height: 100%;
+    width: 90%;
+  }
+
+  .about-section {
+    padding: 0vh 0 30vh 0;
+  }
+
+  .about-section-content {
+    padding: 13vh 20vw 15vh 20vw;
+  }
+
+  .about-title {
+    font-size: 3.5vh;
+    margin-bottom: 3vh;
+  }
+
+  .about-description {
+    padding-inline: 1vw;
+    font-size: 2.25vh;
+  }
+}
+
+/* Mobile landscape mode (width up to 768px but height less than width) */
+@media (max-width: 768px) and (orientation: landscape) {
+  .about-device-logo {
+    height: 100%;
+    width: 60%;
+  }
+
+  .about-section {
+    padding: 0vh 0 30vh 0;
+  }
+
+  .about-section-content {
+    padding: 13vh 20vw 15vh 20vw;
+  }
+
+  .about-title {
+    font-size: 4.5vh;
+    margin-bottom: 3vh;
+  }
+
+  .about-description {
+    padding-inline: 1vw;
+    font-size: 2.75vh;
+  }
 }

@@ -1,7 +1,6 @@
 // src/components/Skills.js
 import React from "react";
 import "./Skills.css";
-
 import { FaLaptopCode } from "react-icons/fa";
 
 function Skills() {
@@ -14,8 +13,6 @@ function Skills() {
           description="I like to code things from scratch, and enjoy bringing ideas to life in the browser."
           technologies={["React", "HTML", "CSS", "JavaScript"]}
         />
-      </div>
-      <div className="skills-section ">
         <SkillCard
           icon={<FaLaptopCode />}
           title="Backend Development"
@@ -28,8 +25,6 @@ function Skills() {
             "NoSQL",
           ]}
         />
-      </div>
-      <div className="skills-section ">
         <SkillCard
           icon={<FaLaptopCode />}
           title="DevOps"
