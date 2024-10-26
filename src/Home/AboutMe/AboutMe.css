@@ -10,10 +10,11 @@
 }
 
 .about-section {
-  display: flex;
-  justify-content: center;
   background-color: #6e07f3;
   color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 3vh 0 4vh 0;
 }
 
 .about-section-content {
