@@ -91,6 +91,7 @@
 
 .hamburger-menu-item {
   padding: 1rem;
+  padding-right: 2rem;
   color: #000;
   font-weight: 500;
   display: flex;
@@ -107,6 +108,7 @@
 .hamburger-menu-icon {
   display: none;
   cursor: pointer;
+  padding-right: 1rem;
 }
 
 /* Media Queries */
