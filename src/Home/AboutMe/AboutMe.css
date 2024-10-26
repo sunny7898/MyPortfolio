@@ -6,7 +6,7 @@
 
 .about-device-logo {
   align-self: center;
-  height: 50vh;
+  height: 30vh;
 }
 
 .about-section {
@@ -35,11 +35,7 @@
 @media (min-width: 1440px) {
   .about-device-logo {
     height: 100%;
-    width: 70%;
-  }
-
-  .about-section {
-    padding: 0vh 0 30vh 0;
+    width: 50%;
   }
 
   .about-section-content {
@@ -61,11 +57,7 @@
 @media (min-width: 1024px) and (max-width: 1440px) {
   .about-device-logo {
     height: 100%;
-    width: 70%;
-  }
-
-  .about-section {
-    padding: 0vh 0 30vh 0;
+    width: 50%;
   }
 
   .about-section-content {
@@ -90,10 +82,6 @@
     width: 70%;
   }
 
-  .about-section {
-    padding: 0vh 0 30vh 0;
-  }
-
   .about-section-content {
     padding: 13vh 20vw 15vh 20vw;
   }
@@ -114,10 +102,6 @@
   .about-device-logo {
     height: 100%;
     width: 70%;
-  }
-
-  .about-section {
-    padding: 0vh 0 30vh 0;
   }
 
   .about-section-content {
@@ -142,10 +126,6 @@
     width: 70%;
   }
 
-  .about-section {
-    padding: 0vh 0 30vh 0;
-  }
-
   .about-section-content {
     padding: 13vh 20vw 15vh 20vw;
   }
@@ -168,10 +148,6 @@
     width: 90%;
   }
 
-  .about-section {
-    padding: 0vh 0 30vh 0;
-  }
-
   .about-section-content {
     padding: 13vh 20vw 15vh 20vw;
   }
@@ -192,10 +168,6 @@
   .about-device-logo {
     height: 100%;
     width: 60%;
-  }
-
-  .about-section {
-    padding: 0vh 0 30vh 0;
   }
 
   .about-section-content {

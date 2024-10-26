@@ -1,0 +1,324 @@
+.experience-container {
+  max-width: 70%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.experience-heading {
+  display: flex;
+  justify-content: center;
+}
+
+.work-experience {
+  border-left: 3px solid #6e07f3;
+  position: relative;
+}
+
+.company-name {
+  font-weight: bold;
+  color: #333;
+}
+
+.work-experience p,
+.work-experience h4 {
+  margin: 5px 0;
+}
+
+.work-experience h4 {
+  font-weight: bold;
+  color: #666;
+  display: inline-block;
+}
+
+.work-experience p {
+  color: #666;
+}
+
+.work-experience .role-duration {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.work-experience .description {
+  color: #333;
+  line-height: 1.5;
+}
+
+.work-experience .skills {
+  color: #777;
+  font-style: italic;
+}
+
+/* For large desktop screens (1440px and above) */
+@media (min-width: 1440px) {
+  .experience-container {
+    margin-bottom: 10vh;
+  }
+
+  .experience-heading {
+    font-size: 5vh;
+    padding: 2.5vh 0;
+  }
+
+  .work-experience {
+    padding-left: 1.25vw;
+    margin-bottom: 3vh;
+  }
+
+  .company-name {
+    font-size: 2.5vh;
+  }
+
+  .work-experience h4 {
+    font-size: 2vh;
+  }
+
+  .work-experience p {
+    font-size: 1.5vh;
+  }
+
+  .work-experience .description {
+    font-size: 1.75vh;
+    margin-top: 1vh;
+  }
+
+  .work-experience .skills {
+    margin-top: 0.75vh;
+    font-size: 1.5vh;
+  }
+}
+
+/* For regular desktop screens (1024px and above) */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .experience-container {
+    margin-bottom: 10vh;
+  }
+
+  .experience-heading {
+    font-size: 5vh;
+    padding: 2.5vh 0;
+  }
+
+  .work-experience {
+    padding-left: 1.25vw;
+    margin-bottom: 3vh;
+  }
+
+  .company-name {
+    font-size: 2.5vh;
+  }
+
+  .work-experience h4 {
+    font-size: 2vh;
+  }
+
+  .work-experience p {
+    font-size: 1.5vh;
+  }
+
+  .work-experience .description {
+    font-size: 1.75vh;
+    margin-top: 1vh;
+  }
+
+  .work-experience .skills {
+    margin-top: 0.75vh;
+    font-size: 1.5vh;
+  }
+}
+
+/* Tablet landscape mode (width between 769px and 1023px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .experience-container {
+    margin-bottom: 8vh;
+  }
+
+  .experience-heading {
+    font-size: 5vh;
+    padding: 2.5vh 0 3vh 0;
+  }
+
+  .work-experience {
+    padding-left: 1.25vw;
+    margin-bottom: 3vh;
+  }
+
+  .company-name {
+    font-size: 2.5vh;
+  }
+
+  .work-experience h4 {
+    font-size: 2vh;
+  }
+
+  .work-experience p {
+    font-size: 1.5vh;
+  }
+
+  .work-experience .description {
+    font-size: 1.75vh;
+    margin-top: 1vh;
+  }
+
+  .work-experience .skills {
+    margin-top: 0.75vh;
+    font-size: 1.5vh;
+  }
+}
+
+/* Tablet portrait mode (width between 481px and 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .experience-container {
+    margin-bottom: 10vh;
+  }
+
+  .experience-heading {
+    font-size: 3.5vh;
+    padding: 2.5vh 0;
+  }
+
+  .work-experience {
+    padding-left: 1.25vw;
+    margin-bottom: 3vh;
+  }
+
+  .company-name {
+    font-size: 2.5vh;
+  }
+
+  .work-experience h4 {
+    font-size: 1.75vh;
+  }
+
+  .work-experience p {
+    font-size: 1.25vh;
+  }
+
+  .work-experience .description {
+    font-size: 1.5vh;
+    margin-top: 1vh;
+  }
+
+  .work-experience .skills {
+    margin-top: 0.75vh;
+    font-size: 1.25vh;
+  }
+}
+
+/* Mobile devices (width between 321px and 480px) */
+@media (min-width: 321px) and (max-width: 480px) {
+  .experience-container {
+    margin-bottom: 10vh;
+  }
+
+  .experience-heading {
+    font-size: 3.25vh;
+    padding: 2.5vh 0;
+  }
+
+  .work-experience {
+    padding-left: 1.25vw;
+    margin-bottom: 3vh;
+  }
+
+  .company-name {
+    font-size: 2.25vh;
+  }
+
+  .work-experience h4 {
+    font-size: 1.75vh;
+  }
+
+  .work-experience p {
+    font-size: 1.25vh;
+  }
+
+  .work-experience .description {
+    font-size: 1.5vh;
+    margin-top: 1vh;
+  }
+
+  .work-experience .skills {
+    margin-top: 0.75vh;
+    font-size: 1.25vh;
+  }
+}
+
+/* Small mobile devices (width up to 320px) */
+@media (max-width: 320px) {
+  .experience-container {
+    margin-bottom: 10vh;
+  }
+
+  .experience-heading {
+    font-size: 3.25vh;
+    padding: 2.5vh 0;
+  }
+
+  .work-experience {
+    padding-left: 1.25vw;
+    margin-bottom: 3vh;
+  }
+
+  .company-name {
+    font-size: 2.25vh;
+  }
+
+  .work-experience h4 {
+    font-size: 1.75vh;
+  }
+
+  .work-experience p {
+    font-size: 1.25vh;
+  }
+
+  .work-experience .description {
+    font-size: 1.5vh;
+    margin-top: 1vh;
+  }
+
+  .work-experience .skills {
+    margin-top: 0.75vh;
+    font-size: 1.25vh;
+  }
+}
+
+/* Mobile landscape mode (width up to 768px but height less than width) */
+@media (max-width: 768px) and (orientation: landscape) {
+  .experience-container {
+    margin-bottom: 10vh;
+  }
+
+  .experience-heading {
+    font-size: 4.5vh;
+    padding: 2.5vh 0;
+  }
+
+  .work-experience {
+    padding-left: 1.25vw;
+    margin-bottom: 3vh;
+  }
+
+  .company-name {
+    font-size: 2.75vh;
+  }
+
+  .work-experience h4 {
+    font-size: 1.75vh;
+  }
+
+  .work-experience p {
+    font-size: 1.5vh;
+  }
+
+  .work-experience .description {
+    font-size: 1.75vh;
+    margin-top: 1vh;
+  }
+
+  .work-experience .skills {
+    margin-top: 0.75vh;
+    font-size: 1.5vh;
+  }
+}

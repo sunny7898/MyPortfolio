@@ -1,14 +1,14 @@
 import React from "react";
 import Hero from "./Hero/Hero";
 import AboutMe from "./AboutMe/AboutMe";
-import Skills from "./Skills/Skills";
+import Experience from "./Experience/Experience";
 
 function Home() {
   return (
     <>
       <Hero />
       <AboutMe />
-      <Skills />
+      <Experience />
     </>
   );
 }
