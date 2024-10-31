@@ -13,12 +13,11 @@ function AboutMe() {
         <div className="about-section-content">
           <h1 className="about-title">About Me</h1>
           <p className="about-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam et
-            illo earum modi error maxime quas, delectus eius culpa Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Ex culpa reiciendis
-            tempore, facilis perspiciatis quo cum eos, molestias amet magni
-            corrupti recusandae iure harum illo nobis nihil repellat modi
-            sapiente!
+            I'm a Software Engineer with over 2 years of experience, currently
+            working as a Frontend Developer on IBM's Flash Storage Team.
+            Previously, I was at HSBC, where I focused on backend development,
+            automation, and infrastructure, optimizing system reliability and
+            managing AWS servers.
           </p>
         </div>
       </div>

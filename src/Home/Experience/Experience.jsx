@@ -8,7 +8,7 @@ const workData = [
     last_working_date: "Present",
     role: "Storage Developer",
     description:
-      "Responsible for developing and maintaining scalable storage solutions, focusing on performance optimization, and ensuring data reliability.",
+      "Working as Frontend Developer in the Flash Storage Team at IBM ISDL.",
     skills: [
       "Azure Blob Storage",
       "Java",
@@ -25,7 +25,7 @@ const workData = [
     last_working_date: "July 2024",
     role: "Software Engineer",
     description:
-      "Worked on financial software solutions, focusing on optimizing transaction processes, enhancing data security, and ensuring compliance with regulatory standards.",
+      "In my role at HSBC, I developed and deployed features using Java 8, Spring Boot, and Authorization plugins in Lua for Kong API Gateway. I streamlined deployment processes by developing Jenkins pipelines and service availability checks, which reduced manual efforts by 80%. I managed application servers on AWS EC2 and EKS, provided critical production support, resolving numerous incidents, and led upgrade activity for more than 100 application servers serving multiple global markets with millions of customers with zero downtime.",
     skills: [
       "Java",
       "Spring Boot",

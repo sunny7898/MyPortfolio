@@ -12,9 +12,8 @@ function Footer() {
           <div className="footer-section info">
             <span className="footer-title">Sunny Goswami</span>
             <p className="footer-description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus architecto, harum itaque ipsam quam numquam provident
-              molestias{" "}
+              Software Engineer with over 2 years of experience, currently
+              working as a Frontend Developer on IBM
             </p>
           </div>
           <div className="footer-section social">
