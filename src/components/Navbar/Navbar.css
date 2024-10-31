@@ -17,7 +17,7 @@
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  color: #6e07f3;
+  color: var(--primary-color);
 }
 
 .navbar-content-section {
@@ -44,7 +44,7 @@
 }
 
 .nav-item:hover {
-  color: #6e07f3;
+  color: var(--primary-color);
 }
 
 .nav-item::after {
@@ -54,7 +54,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #6e07f3;
+  background-color: var(--primary-color);
   transition: width 0.3s ease-in-out;
 }
 
@@ -73,7 +73,7 @@
 }
 
 .btn-outline:hover {
-  background-color: #6e07f3;
+  background-color: var(--primary-color);
   color: white;
 }
 
@@ -102,7 +102,7 @@
 }
 
 .hamburger-menu-item:hover {
-  color: #6e07f3;
+  color: var(--primary-color);
 }
 
 .hamburger-menu-icon {

@@ -35,13 +35,13 @@
 }
 
 .project-link {
-  background-color: #6e07f3;
+  background-color: var(--primary-color);
   color: white;
   text-decoration: none;
 }
 
 .project-link:hover {
-  background-color: #852ff5;
+  background-color: var(--primary-color);
 }
 
 /* For large desktop screens (1440px and above) */

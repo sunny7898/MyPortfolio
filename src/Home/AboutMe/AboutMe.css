@@ -10,7 +10,7 @@
 }
 
 .about-section {
-  background-color: #6e07f3;
+  background-color: var(--primary-color);
   color: #fff;
   display: flex;
   justify-content: center;

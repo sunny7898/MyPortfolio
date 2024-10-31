@@ -22,7 +22,6 @@
 }
 
 .hero-title {
-  font-family: "Eurostile";
   font-weight: 800;
   font-size: 2rem;
   color: #333;
@@ -34,7 +33,6 @@
 }
 
 .hero-sub-title {
-  font-family: "Eurostile";
   font-weight: lighter;
   font-size: 1.25rem;
   color: #333;

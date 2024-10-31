@@ -25,7 +25,7 @@
   margin: 1rem auto 0 auto; /* Add margin to space it from the heading */
   height: 5px;
   width: 2rem;
-  background: #7843e9;
+  background-color: var(--primary-color);
   border-radius: 5px;
 }
 
@@ -75,7 +75,7 @@
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: #7843e9;
+  border-color: var(--primary-color);
 }
 
 textarea {
@@ -87,7 +87,7 @@ textarea {
   align-self: flex-end;
   padding: 0.75rem 1.5rem;
   margin-bottom: 1rem;
-  background-color: #7843e9;
+  background-color: var(--primary-color);
   color: white;
   border: none;
   border-radius: 4px;
@@ -97,7 +97,7 @@ textarea {
 }
 
 .submit-btn:hover {
-  background-color: #0056b3;
+  background-color: var(--primary-color);
 }
 /* Additional CSS for submit action feedback */
 

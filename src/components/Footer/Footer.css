@@ -35,7 +35,7 @@
 
 .footer-title {
   font-weight: 700;
-  color: #1d4ed8;
+  color: var(--primary-color);
   text-transform: uppercase;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .footer-link {
-  color: #1d4ed8;
+  color: var(--primary-color);
   text-decoration: none;
   font-weight: 700;
 }
