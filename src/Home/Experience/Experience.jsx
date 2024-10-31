@@ -4,7 +4,7 @@ import "./Experience.css";
 const workData = [
   {
     company_name: "IBM ISDL",
-    joining_date: "October 2023",
+    joining_date: "October 2024",
     last_working_date: "Present",
     role: "Storage Developer",
     description:
