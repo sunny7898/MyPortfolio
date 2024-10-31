@@ -5,7 +5,14 @@ function ProjectCard({ image, title, summary, githubLink, demoLink }) {
   return (
     <div className="project-card">
       <div className="project-image-container">
-        <img src={image} alt={title} className="project-image" />
+        <img
+          src={image}
+          alt={title}
+          className="project-image"
+          loading="lazy"
+          style={{ filter: "blur(10px)" }}
+          onLoad={(e) => (e.target.style.filter = "none")}
+        />
       </div>
       <div className="project-text-container">
         <h3 className="project-title">{title}</h3>
