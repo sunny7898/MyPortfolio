@@ -5,7 +5,7 @@ function AboutMe() {
   return (
     <div className="about-container">
       <img
-        src="../../../public/images/hero-devices.svg"
+        src="/images/hero-devices.svg"
         alt="deviceLogo"
         className="about-device-logo"
       />

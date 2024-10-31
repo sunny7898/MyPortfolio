@@ -1,7 +1,7 @@
 // src/assets/projectsData.js
 const projectsData = [
   {
-    image: "../../public/images/WeatherApp.jpeg",
+    image: "/images/WeatherApp.jpeg",
     title: "Weather App",
     summary:
       "A simple weather app that fetches real-time weather data using an external API.",
@@ -9,14 +9,14 @@ const projectsData = [
     demoLink: "https://weatherapp.com",
   },
   {
-    image: "../../public/images/Portfolio.jpeg",
+    image: "/images/Portfolio.jpeg",
     title: "Portfolio Website",
     summary: "A personal portfolio website showcasing projects and skills.",
     githubLink: "https://github.com/example/portfolio-website",
     demoLink: "https://portfolioexample.com",
   },
   {
-    image: "../../public/images/Ecommerce.jpeg",
+    image: "/images/Ecommerce.jpeg",
     title: "E-commerce Store",
     summary:
       "A fully functional e-commerce platform with payment gateway integration.",
@@ -24,7 +24,7 @@ const projectsData = [
     demoLink: "https://ecommercestore.com",
   },
   {
-    image: "../../public/images/BlogPlatform.jpeg",
+    image: "/images/BlogPlatform.jpeg",
     title: "Chat Application",
     summary:
       "A real-time chat application using WebSockets for instant messaging.",
@@ -32,7 +32,7 @@ const projectsData = [
     demoLink: "https://chatapp.com",
   },
   {
-    image: "../../public/images/TaskManager.jpeg",
+    image: "/images/TaskManager.jpeg",
     title: "Task Manager",
     summary:
       "A task management app to create, update, and track progress on tasks.",
@@ -40,7 +40,7 @@ const projectsData = [
     demoLink: "https://taskmanager.com",
   },
   {
-    image: "../../public/images/BlogPlatform.jpeg",
+    image: "/images/BlogPlatform.jpeg",
     title: "Blog Platform",
     summary:
       "A customizable blog platform where users can post, edit, and share blogs.",
@@ -48,7 +48,7 @@ const projectsData = [
     demoLink: "https://blogplatform.com",
   },
   {
-    image: "../../public/images/Ecommerce.jpeg",
+    image: "/images/Ecommerce.jpeg",
     title: "Fitness Tracker",
     summary:
       "A fitness tracker app to log exercises, track progress, and analyze workout trends.",

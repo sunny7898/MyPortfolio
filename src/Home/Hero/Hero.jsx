@@ -6,7 +6,7 @@ function Hero() {
     <div className="hero-container">
       <div className="hero-summary-section">
         <img
-          src="../../../public/images/profile-pic.png"
+          src="/images/profile-pic.png"
           alt="image"
           className="hero-profile-pic"
         />
