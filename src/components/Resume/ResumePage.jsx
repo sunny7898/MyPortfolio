@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Document, Page } from "react-pdf";
 import { pdfjs } from "react-pdf";
+import resumePdf from "../../assets/Sunny_Goswami_CV.pdf";
 import "./ResumePage.css";
 import { FaDownload } from "react-icons/fa6";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -12,9 +13,6 @@ pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pd
 function ResumePage() {
   const [scale, setScale] = useState(1);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  const resumeUrl =
-    "https://drive.google.com/file/d/1XNWyzOAip3_GtgQbHOegOeHtIn7SE89p/view?usp=sharing";
 
   useEffect(() => {
     function updateDimensions() {
@@ -49,22 +47,22 @@ function ResumePage() {
 
   return (
     <div className="resume-container">
-      <DownloadButton resumeUrl={resumeUrl} />
+      <DownloadButton />
       <div className="showcase-section">
-        <Document file={resumeUrl}>
+        <Document file={resumePdf}>
           <Page pageNumber={1} scale={scale} />
         </Document>
       </div>
-      {windowWidth > 768 && <DownloadButton resumeUrl={resumeUrl} />}{" "}
+      {windowWidth > 768 && <DownloadButton />}{" "}
     </div>
   );
 }
 
-function DownloadButton({ resumeUrl }) {
+function DownloadButton() {
   return (
     <div className="download-cv">
       <a
-        href={resumeUrl}
+        href={resumePdf}
         target="_blank"
         rel="noopener noreferrer"
         className="download-cv-link"
