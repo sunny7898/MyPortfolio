@@ -11,47 +11,58 @@ import "react-pdf/dist/Page/TextLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.mjs`;
 
 function ResumePage() {
-  const [width, setWidth] = useState(1200);
+  const [scale, setScale] = useState(1);
 
   useEffect(() => {
-    setWidth(window.innerWidth);
+    function updateScale() {
+      if (window.innerWidth > 1440) {
+        setScale(2);
+      } else if (window.innerWidth > 1024) {
+        setScale(1.35);
+      } else if (window.innerWidth > 769) {
+        setScale(1);
+      } else if (window.innerWidth > 481) {
+        setScale(0.65);
+      } else if (window.innerWidth > 320) {
+        setScale(0.5);
+      } else if (window.innerWidth > 280) {
+        setScale(0.25);
+      } else {
+        setScale(1.5);
+      }
+    }
+    updateScale();
+
+    // Add event listener to update scale on resize
+    window.addEventListener("resize", updateScale);
+    return () => window.removeEventListener("resize", updateScale);
   }, []);
 
   return (
     <div className="resume-container">
-      {/* Download button at the top */}
-      <div className="download-cv">
-        {/* TODO: Create a blank container to host the pdf in it. this will help during loading */}
-        <a
-          href={resumePdf}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="download-cv-link"
-        >
-          <FaDownload />
-          &nbsp; Download CV
-        </a>
-      </div>
-
-      {/* PDF Viewer */}
+      <DownloadButton />
       <div className="showcase-section">
         <Document file={resumePdf}>
-          <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />{" "}
+          <Page pageNumber={1} scale={scale} />
         </Document>
       </div>
+      <DownloadButton />
+    </div>
+  );
+}
 
-      {/* Download button at the bottom */}
-      <div className="download-cv">
-        <a
-          href={resumePdf}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="download-cv-link"
-        >
-          <FaDownload />
-          &nbsp; Download CV
-        </a>
-      </div>
+function DownloadButton() {
+  return (
+    <div className="download-cv">
+      <a
+        href={resumePdf}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="download-cv-link"
+      >
+        <FaDownload />
+        &nbsp; Download CV
+      </a>
     </div>
   );
 }

@@ -1,28 +1,142 @@
-/* src/components/Projects.css */
-
 .resume-container {
-  padding: 6rem;
   background-color: #dfdfdf;
 }
 
 .download-cv {
   text-align: center;
-  margin: 24px 0px;
   justify-content: center;
   position: relative;
-  display: flex; /* Add flexbox */
-  align-items: center; /* Vertically align the link if needed */
+  display: flex;
+  align-items: center;
 }
 
 .download-cv-link {
-  padding: 0.5rem 2rem;
   background-color: #6e07f3;
   color: white;
   text-decoration: none;
   border-radius: 5px;
-  font-size: 0.9rem;
-  transition: background-color 0.3s ease;
-  display: inline-flex; /* Make the link behave as an inline flexbox container */
-  align-items: center; /* Vertically center the icon and text */
-  justify-content: center; /* Horizontally center the content inside the link */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1440px) {
+  .resume-container {
+    padding: 12vh;
+  }
+
+  .download-cv {
+    margin: 1.5rem 0rem;
+  }
+
+  .download-cv-link {
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    transition: background-color 0.3s ease;
+  }
+}
+
+/* For regular desktop screens (1024px and above) */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .resume-container {
+    padding: 12vh;
+  }
+
+  .download-cv {
+    margin: 1.5rem 0rem;
+  }
+
+  .download-cv-link {
+    padding: 0.6rem 1rem;
+    font-size: 1.25rem;
+    transition: background-color 0.3s ease;
+  }
+}
+
+/* Tablet landscape mode (width between 769px and 1023px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .resume-container {
+    padding: 12vh;
+  }
+
+  .download-cv {
+    margin: 1.5rem 0rem;
+  }
+
+  .download-cv-link {
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+}
+
+/* Tablet portrait mode (width between 481px and 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .resume-container {
+    padding: 12vh;
+  }
+
+  .download-cv {
+    margin: 1.5rem 0rem;
+  }
+
+  .download-cv-link {
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+}
+
+/* Mobile devices (width between 321px and 480px) */
+@media (min-width: 321px) and (max-width: 480px) {
+  .resume-container {
+    padding-top: 12vh;
+    padding-bottom: 6vh;
+  }
+
+  .download-cv {
+    margin: 1.5rem 0rem;
+  }
+
+  .download-cv-link {
+    padding: 0.5rem 1.15rem;
+    font-size: 0.85rem;
+    transition: background-color 0.3s ease;
+  }
+}
+
+/* Small mobile devices (width up to 320px) */
+@media (max-width: 320px) {
+  .resume-container {
+    padding-top: 12vh;
+    padding-bottom: 6vh;
+  }
+
+  .download-cv {
+    margin: 1.5rem 0rem;
+  }
+
+  .download-cv-link {
+    padding: 0.5rem 1.15rem;
+    font-size: 0.85rem;
+    transition: background-color 0.3s ease;
+  }
+}
+
+/* Mobile landscape mode (width up to 768px but height less than width) */
+@media (max-width: 768px) and (orientation: landscape) {
+  .resume-container {
+    padding-top: 12vh;
+    padding-bottom: 6vh;
+  }
+
+  .download-cv {
+    margin: 1.5rem 0rem;
+  }
+
+  .download-cv-link {
+    padding: 0.5rem 1.15rem;
+    font-size: 0.85rem;
+    transition: background-color 0.3s ease;
+  }
 }
