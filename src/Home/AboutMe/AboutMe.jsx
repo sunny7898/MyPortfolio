@@ -14,7 +14,7 @@ function AboutMe() {
           <h1 className="about-title">About Me</h1>
           <p className="about-description">
             I'm a Software Engineer with over 2 years of experience, currently
-            working as a Frontend Developer on IBM's Flash Storage Team.
+            working as a Frontend Developer in IBM's Flash Storage Team.
             Previously, I was at HSBC, where I focused on backend development,
             automation, and infrastructure, optimizing system reliability and
             managing AWS servers.

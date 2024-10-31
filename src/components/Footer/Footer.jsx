@@ -13,7 +13,7 @@ function Footer() {
             <span className="footer-title">Sunny Goswami</span>
             <p className="footer-description">
               Software Engineer with over 2 years of experience, currently
-              working as a Frontend Developer on IBM
+              working as a Frontend Developer in IBM
             </p>
           </div>
           <div className="footer-section social">
