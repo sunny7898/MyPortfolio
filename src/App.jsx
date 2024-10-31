@@ -4,7 +4,7 @@ import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./Home/Home";
 import AboutMe from "./Home/AboutMe/AboutMe";
 
-import Projects from "./components/ProjectsComponent/Projects";
+import Projects from "./components/Projects/Projects";
 import ResumePage from "./components/Resume/ResumePage";
 import ContactMe from "./components/ContactMe/ContactMe";
 import Navbar from "./components/Navbar/Navbar";
