@@ -9,6 +9,9 @@ function Hero() {
           src="/images/profile-pic.png"
           alt="image"
           className="hero-profile-pic"
+          loading="lazy"
+          style={{ filter: "blur(10px)" }}
+          onLoad={(e) => (e.target.style.filter = "none")}
         />
 
         <div className="hero-content-section">
