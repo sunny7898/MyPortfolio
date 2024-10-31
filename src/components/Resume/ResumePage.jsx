@@ -9,7 +9,7 @@ import "react-pdf/dist/Page/TextLayer.css";
 // Set the worker to the pdfjs-dist worker
 pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.mjs`;
 
-function ResumePage({ resumeUrl }) {
+function ResumePage() {
   const [scale, setScale] = useState(1);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
