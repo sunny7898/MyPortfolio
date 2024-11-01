@@ -25,8 +25,8 @@ function ContactMe() {
 
   const handleSendEmail = (e) => {
     e.preventDefault();
-    setLoading(true); // Start loading
-    setMessage(null); // Clear previous messages
+    setLoading(true);
+    setMessage(null);
 
     emailjs
       .sendForm(
@@ -39,6 +39,15 @@ function ContactMe() {
         () => {
           setLoading(false); // Stop loading
           setMessage("Success! Your message has been sent.");
+
+          // Clear form data
+          setFormData({
+            user_name: "",
+            user_email: "",
+            message: "",
+            current_org: "",
+          });
+          form.current.reset(); // Clear the form fields
         },
         () => {
           setLoading(false); // Stop loading
