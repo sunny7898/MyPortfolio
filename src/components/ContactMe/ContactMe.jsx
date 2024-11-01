@@ -1,10 +1,12 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import swal from "sweetalert";
+
 import "./ContactMe.css";
 
 const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+const EMAILJS_PUBLIC_KEY = null;
 
 function ContactMe() {
   const form = useRef();
@@ -38,7 +40,12 @@ function ContactMe() {
       .then(
         () => {
           setLoading(false); // Stop loading
-          setMessage("Success! Your message has been sent.");
+          swal("Good job!", "You clicked the button!", "success");
+          swal(
+            "Thanks for reaching out!",
+            "Your message has been sent",
+            "success"
+          );
 
           // Clear form data
           setFormData({
@@ -51,7 +58,11 @@ function ContactMe() {
         },
         () => {
           setLoading(false); // Stop loading
-          setMessage("Failed to send message. Please try again later.");
+          swal(
+            "Sorry! Issue with the Contact Service",
+            "Please try contacting directly using email in CV",
+            "error"
+          );
         }
       );
   };
